@@ -1,11 +1,19 @@
 # SOC-path-on-Hack-the-box
 A brief write-up from the Security Operation Analyst pathway on Hack-the-box platform
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1d7fbf4 (redact answers from HTB SOC writeup)
 # 🛡️ HTB SOC Analyst Path — Windows Event Logs & Sysmon Writeup
 
 > **Module:** Windows Event Logs & Sysmon Analysis  
 > **Path:** SOC Analyst  
 > **Difficulty:** Medium  
+<<<<<<< HEAD
 > **Date:** March 6, 2026  
+=======
+> **Date:** September 28, 2024  
+>>>>>>> 1d7fbf4 (redact answers from HTB SOC writeup)
 > **Tags:** `windows` `sysmon` `powershell` `credential-dumping` `dll-hijacking` `ETW` `threat-detection`
 
 ---
@@ -89,7 +97,11 @@ CertUtil -hashfile C:\Users\Administrator\Desktop\WININET.dll SHA256
 ### ✅ Answer
 
 ```
+<<<<<<< HEAD
 51f2305dcf385056c68f7ccf5b1b3b9304865cef1257947d4ad6ef5fad2e3b13
+=======
+REDACTED
+>>>>>>> 1d7fbf4 (redact answers from HTB SOC writeup)
 ```
 
 ---
@@ -153,7 +165,11 @@ Get-FileHash "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clrjit.dll" -Algor
 ### ✅ Answer
 
 ```
+<<<<<<< HEAD
 8A3CD3CF2249E9971806B15C75A892E6A44CCA5FF5EA5CA89FDA951CD2C09AA9
+=======
+REDACTED
+>>>>>>> 1d7fbf4 (redact answers from HTB SOC writeup)
 ```
 
 ---
@@ -201,7 +217,11 @@ Look for the `Administrator` account entry and grab the `NTLM` value.
 ### ✅ Answer
 
 ```
+<<<<<<< HEAD
 NTLM: 5e4ffd54b3849aa720ed39f50185e533
+=======
+REDACTED
+>>>>>>> 1d7fbf4 (redact answers from HTB SOC writeup)
 ```
 
 ---
@@ -248,7 +268,11 @@ Get-Content C:\windows\temp\etw.json | ConvertFrom-Json | Where-Object { $_.Mana
 ### ✅ Answer
 
 ```
+<<<<<<< HEAD
 GetTokenInformation
+=======
+REDACTED
+>>>>>>> 1d7fbf4 (redact answers from HTB SOC writeup)
 ```
 
 ---
@@ -289,7 +313,11 @@ Get-ChildItem "C:\Tools\chainsaw\EVTX-ATTACK-SAMPLES\Lateral Movement" -Filter *
 ### ✅ Answer
 
 ```
+<<<<<<< HEAD
 12:30:30
+=======
+REDACTED
+>>>>>>> 1d7fbf4 (redact answers from HTB SOC writeup)
 ```
 
 ---
@@ -302,12 +330,21 @@ Get-ChildItem "C:\Tools\chainsaw\EVTX-ATTACK-SAMPLES\Lateral Movement" -Filter *
 
 | # | Log Directory | Question | Answer |
 |---|--------------|----------|--------|
+<<<<<<< HEAD
 | 1 | `C:\Logs\DLLHijack` | Process responsible for DLL hijacking | `Dism.exe` |
 | 2 | `C:\Logs\PowershellExec` | Process that executed unmanaged PowerShell | `Calculator.exe` |
 | 3 | `C:\Logs\PowershellExec` | Process that injected into the above | `rundll32.exe` |
 | 4 | `C:\Logs\Dump` | Process that performed the LSASS dump | `processhacker.exe` |
 | 5 | `C:\Logs\Dump` | Did an ill-intended login occur after the dump? | `No` |
 | 6 | `C:\Logs\StrangePPID` | Process used via strange parent-child relationship | `WerFault.exe` |
+=======
+| 1 | `C:\Logs\DLLHijack` | Process responsible for DLL hijacking | `REDACTED` |
+| 2 | `C:\Logs\PowershellExec` | Process that executed unmanaged PowerShell | `REDACTED` |
+| 3 | `C:\Logs\PowershellExec` | Process that injected into the above | `REDACTED` |
+| 4 | `C:\Logs\Dump` | Process that performed the LSASS dump | `REDACTED` |
+| 5 | `C:\Logs\Dump` | Did an ill-intended login occur after the dump? | `REDACTED` |
+| 6 | `C:\Logs\StrangePPID` | Process used via strange parent-child relationship | `REDACTED` |
+>>>>>>> 1d7fbf4 (redact answers from HTB SOC writeup)
 
 ### Key Commands Used
 
@@ -359,4 +396,8 @@ Get-WinEvent -Path "C:\Logs\PowershellExec\<file>.evtx" |
 
 ---
 
+<<<<<<< HEAD
 *Writeup by [Umaru Bah] | [GitHub Profile](https://github.com/bahh99)*
+=======
+*Writeup by Umaru Bah | [GitHub Profile](https://github.com/bahh99)*
+>>>>>>> 1d7fbf4 (redact answers from HTB SOC writeup)
