@@ -359,4 +359,4 @@ Get-WinEvent -Path "C:\Logs\PowershellExec\<file>.evtx" |
 
 ---
 
-*Writeup by [Your Name] | [GitHub Profile](https://github.com/bahh99)*
+*Writeup by [Umaru Bah] | [GitHub Profile](https://github.com/bahh99)*
