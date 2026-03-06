@@ -5,7 +5,7 @@ A brief write-up from the Security Operation Analyst pathway on Hack-the-box pla
 > **Module:** Windows Event Logs & Sysmon Analysis  
 > **Path:** SOC Analyst  
 > **Difficulty:** Medium  
-> **Date:** September 28, 2024  
+> **Date:** March 6, 2026  
 > **Tags:** `windows` `sysmon` `powershell` `credential-dumping` `dll-hijacking` `ETW` `threat-detection`
 
 ---
