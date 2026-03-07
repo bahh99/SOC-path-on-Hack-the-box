@@ -84,7 +84,7 @@ Get-FileHash <path_to_dll> -Algorithm SHA256
 CertUtil -hashfile <path_to_dll> SHA256
 ```
 
-> ![Hash output in terminal](images/Hash output in terminal.png)
+> ![Hash output in terminal](images/Hash-output.png)
 
 > 💡 **Detection tip:** Defenders can catch this via **Sysmon Event ID 7 (Image Load)** — look for DLLs loaded from unusual directories like a user's Desktop instead of `System32`.
 
