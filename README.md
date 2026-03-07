@@ -3,7 +3,7 @@
 > **Module:** Windows Event Logs & Sysmon Analysis  
 > **Path:** SOC Analyst  
 > **Difficulty:** Medium  
-> **Date:** March 6, 2026  
+> **Date:** MArch 6, 2026  
 > **Tags:** `windows` `sysmon` `powershell` `credential-dumping` `dll-hijacking` `ETW` `threat-detection`
 
 > ⚠️ **Note:** This writeup is intended as an educational companion to the HTB SOC Analyst Path. Specific answers have been omitted — work through the challenges yourself to get the most out of this certification.
