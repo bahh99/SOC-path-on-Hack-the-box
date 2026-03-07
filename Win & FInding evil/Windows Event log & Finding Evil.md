@@ -84,7 +84,7 @@ Get-FileHash <path_to_dll> -Algorithm SHA256
 CertUtil -hashfile <path_to_dll> SHA256
 ```
 
-> ![Hash output in terminal](images/Hash-output.png)
+> ![Hash output in terminal](images/hash-output.png)
 
 > 💡 **Detection tip:** Defenders can catch this via **Sysmon Event ID 7 (Image Load)** — look for DLLs loaded from unusual directories like a user's Desktop instead of `System32`.
 
@@ -118,7 +118,7 @@ Get-Process <process_name>
 
 Note down the `Id` (PID) value.
 
-> ![Get-Process output showing target PID](images/showing-target-PID.png)
+> ![Get-Process output showing target PID](images/showing-target-pid.png)
 
 **Step 4 — Inject PowerShell code into the target process**
 
@@ -138,7 +138,7 @@ Open **Process Hacker**, locate your target process → right-click → **Proper
 Get-FileHash "<path_to_dll>" -Algorithm SHA256
 ```
 
-> ![SHA256 hash output](images/Hash-output.png)
+> ![SHA256 hash output](images/hash-output.png)
 
 > 💡 **Detection tip:** Monitor for .NET runtime DLLs loading into non-.NET processes — this is a strong indicator of unmanaged PowerShell injection.
 
