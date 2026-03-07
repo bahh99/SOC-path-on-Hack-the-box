@@ -118,7 +118,7 @@ Get-Process <process_name>
 
 Note down the `Id` (PID) value.
 
-> ![Get-Process output showing target PID](images/showing target PID.png)
+> ![Get-Process output showing target PID](images/showing-target-PID.png)
 
 **Step 4 — Inject PowerShell code into the target process**
 
@@ -138,7 +138,7 @@ Open **Process Hacker**, locate your target process → right-click → **Proper
 Get-FileHash "<path_to_dll>" -Algorithm SHA256
 ```
 
-> ![SHA256 hash output](images/Hash output in terminal.png)
+> ![SHA256 hash output](images/Hash-output.png)
 
 > 💡 **Detection tip:** Monitor for .NET runtime DLLs loading into non-.NET processes — this is a strong indicator of unmanaged PowerShell injection.
 
@@ -175,7 +175,7 @@ sekurlsa::logonpasswords
 
 Scroll through the output and locate the target account. The NTLM hash will be clearly labeled.
 
-> ![Mimikatz output — sensitive values redacted](images/timestamp redacted.png)
+> ![Mimikatz output — sensitive values redacted](images/timestamp-redacted.png)
 
 > 💡 **Detection tip:** This is visible via **Sysmon Event ID 10 (Process Access)** — flag any process opening a handle to `lsass.exe` with suspicious access rights (e.g., `0x1010`).
 
@@ -260,7 +260,7 @@ Get-ChildItem "<log_directory>" -Filter *.evtx | ForEach-Object {
 
 Look through the output for an event relating to a `PRINT` share being added. The timestamp of that event is your answer.
 
-> ![Get-WinEvent output — timestamp redacted](images/timestamp redacted.png)
+> ![Get-WinEvent output — timestamp redacted](images/timestamp-redacted.png)
 
 ---
 
