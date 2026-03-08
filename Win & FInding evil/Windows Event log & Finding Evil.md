@@ -71,6 +71,7 @@ copy <malicious.dll> C:\Users\Administrator\Desktop\<malicious.dll>
 Run the application from the Desktop. A successful hijack will produce a visible indicator confirming your DLL was loaded instead of the legitimate one.
 
 > 📸 *[Screenshot: Confirmation popup from DLL execution]*
+> > ![systeminfo output](images/helloDLL.png)
 
 **Step 6 — Retrieve the SHA256 hash of your malicious DLL**
 
